@@ -18,7 +18,7 @@ $(function(){
 		success:function(appointment){
 			$.each(appointment,function(i,appointment){
 				$appointment.append('<li><div class="student card bg-light m-2\" style=\"width: 12rem;float: left;">ID:<span class="noedit id">'+appointment.id
-																																				  +'</span><input class="edit id"/><br>Name:<span class="noedit name">'
+																																				  +'</span><label class="edit id"/><br>Name:<span class="noedit name">'
 																																				  +appointment.name
 																																				  +'</span><input class="edit name"/> <br>DocId:<span class="noedit docid">'
 																																				  +appointment.docId
@@ -151,7 +151,7 @@ $(function(){
 	});
 	$appointment.delegate('.editapp','click',function(){
 		var $li=$(this).closest('li');
-		$li.find('input.id').val($li.find('span.id').html());
+		$li.find('label.id').val($li.find('span.id').html());
 		$li.find('input.name').val($li.find('span.name').html());
 		$li.find('input.docid').val($li.find('span.docid').html());
 		$li.find('input.date').val($li.find('span.date').html());
@@ -167,7 +167,7 @@ $(function(){
 		var appoi={
 				date: $li.find('input.date').val(),
 		        docId: $li.find('input.docid').val(),
-		        id: $li.find('input.id').val(),
+		        id: $li.find('label.id').val(),
 		        name: $li.find('input.name').val(),
 		        time: $li.find('input.time').val()
 				
