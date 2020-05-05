@@ -62,10 +62,6 @@ pageEncoding="ISO-8859-1"%>
 <div class="row">
 <ul id="appointment" class="row" ></ul>
 </div>
-<div class="row">
-<div class="col-12" id="appoin">
-</div>
-</div>
 </div>
 
 </body>
