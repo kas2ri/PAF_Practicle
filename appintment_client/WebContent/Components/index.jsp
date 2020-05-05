@@ -56,6 +56,7 @@ pageEncoding="ISO-8859-1"%>
 </form>
 </div>
 </div>
+
 <br>
 <h2>Appointments</h2>
 <div class="row">
@@ -66,5 +67,6 @@ pageEncoding="ISO-8859-1"%>
 </div>
 </div>
 </div>
+
 </body>
 </html>
