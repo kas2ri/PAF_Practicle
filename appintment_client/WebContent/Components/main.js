@@ -78,7 +78,7 @@ $(function(){
 			
 			success: function(newAppointment){
 				$appointment.append('<li><div class="student card bg-light m-2\" style=\"width: 12rem;float: left;">ID:<span class="noedit id">'+newAppointment.id
-																																				  +'</span><input class="edit id"/></span><br>Name:<span class="noedit name">'
+																																				  +'</span><label class="edit id"/></span><br>Name:<span class="noedit name">'
 																																				  +newAppointment.name
 																																				  +'</span><input class="edit name"/> <br>DocId:<span class="noedit docid">'
 																																				  +newAppointment.docId
